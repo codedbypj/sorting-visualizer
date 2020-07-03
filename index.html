@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sorting Visualizer</title>
+        <meta charset="UTF-8"/>
+        <meta name="author" content="P Jayakrishna"/>
+        <meta name="keywords" content="sorting,Algorithm,Visualizer"/>
+        <link rel="stylesheet" href="css/index_style.css"/>
+        <link rel="icon" href="imgs/icon.png"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body >
+        <div class="top">
+        <h1>
+            Sorting Visualizer
+        </h1>
+        <p class="p_class"id="slider">slide to vary Array Size</p>
+        <input class="slider_class" id="slider_id" type="range" min="5" max="100" value="5">
+        <button class="sort_btn" id="gen">Generate Array</button>
+        <button class="sort_btn" id="sel_btn">SelectionSort</button>
+        <button class="sort_btn" id="ins_btn">InsertionSort</button>
+        <button class="sort_btn" id="bub_btn">BubbleSort</button>
+        <button class="sort_btn" id="mer_btn">MergeSort</button>
+        <button class="sort_btn" id="qck_btn">QuickSort</button>
+        <a class="sort_btn" id="dev" href="#complexity_id">Time&Space Complexities</a>
+    </div>
+    <div id="canvas_holder" class="myClass"><br></div>
+    <div>
+        <svg class="svg_class" width="10" height="10">
+            <rect id="grey" width="10" height="10" style="fill:#20334e"></rect>
+        </svg>
+        <p id="grey_id"class="svg_class"></p>
+        <svg class="svg_class" width="10" height="10">
+            <rect id="black" width="10" height="10" style="fill:#000000"></rect>
+        </svg>
+        <p id="black_id" class="svg_class"></p>
+    </div>
+    <div id="complexity_id" class = complexity>
+        <h3 id="heading">Time & Space Complexities</h3>
+        <table>
+            <tr>
+                <th>Algorithm</th>
+                <th colspan="3">Time(Best, Average & Worst)</th>
+                <th>Space</th>
+                <th>Wiki Link</th>
+            </tr>
+            <tr>
+                <th>SelectionSort</th>
+                <td>O(n<sup>2</sup>)</td>
+                <td>O(n<sup>2</sup>)</td>
+                <td>O(n<sup>2</sup>)</td>
+                <td>O(1)</td>
+                <td>temp</td>
+            </tr>
+            <tr>
+                <th>InsertionSort</th>
+                <td>O(n)</td>
+                <td>O(n<sup>2</sup>)</td>
+                <td>O(n<sup>2</sup>)</td>
+                <td>O(1)</td>
+                <td>temp</td>
+            </tr>
+            <tr>
+                <th>BubbleSort</th>
+                <td>O(n)</td>
+                <td>O(n<sup>2</sup>)</td>
+                <td>O(n<sup>2</sup>)</td>
+                <td>O(1)</td>
+                <td>temp</td>
+            </tr>
+            <tr>
+                <th>MergeSort</th>
+                <td>O(nlog(n))</td>
+                <td>O(nlog(n))</td>
+                <td>O(nlog(n))</td>
+                <td>O(n)</td>
+                <td>temp</td>
+            </tr>
+            <tr>
+                <th>QuickSort</th>
+                <td>O(nlog(n))</td>
+                <td>O(nlog(n))</td>
+                <td>O(n<sup>2</sup>)</td>
+                <td>O(1)</td>
+                <td>temp</td>
+            </tr>
+        </table>
+        <br>
+        <div id="links">
+        <a class="pngs_class" href="mailto:jayakrishnapagadala00@gmil.com"><img src="imgs/gmail_png.png" alt="mail"/></a>
+        <a class="pngs_class" href="https://github.com.codedbypj"><img src="imgs/github_png.png"</a>
+        <a class="pngs_class" href="https://linkedin.com/p-jayakrishna-1910b2193"><img src="imgs/linkedin_png.png"</a>
+        <a class="pngs_class" href="https://www.instagram.com/jayakrishna4real"><img src="imgs/insta_png.png"</a>
+        </div>
+        
+    </div>
+    
+    
+    <script type="text/javascript" src="js/index_page.js"></script>
+    <script type="text/javascript" src="js/p5.js"></script>
+    <script>
+        function topFunction(){
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    </body>
+</html>
