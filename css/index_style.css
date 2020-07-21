@@ -40,7 +40,7 @@ nav{
     display:inline-block;
     font-size: medium;
     font-family: monaco,'Source Code Pro','Courier New';
-    margin-left: 10px;
+    margin-left: 30px;
     margin-right: 10px;
     margin-bottom: 5px;
 }
@@ -50,7 +50,8 @@ nav{
     background: #20334e;
 }
 .sort_btn:hover{
-    background: #000000;
+    color: #ffffff;
+    font-size: 17px;
 }
 
 .sort_btn:focus{
@@ -79,6 +80,10 @@ th{
 }
 td{
     width: 100%;
+}
+td:hover{
+    background: #c6ccd4;
+    color: black;
 }
 #heading{
     margin-top:25px;
@@ -125,7 +130,7 @@ img{
 a{
     text-decoration: none;
     width: 50px;
-    height: 50px;
+    height: 20px;
 }
 #links{
     background: #20334e;
