@@ -81,10 +81,6 @@ th{
 td{
     width: 100%;
 }
-td:hover{
-    background: #c6ccd4;
-    color: black;
-}
 #heading{
     margin-top:25px;
     font-family: monaco,'Source Code Pro','Courier New';
@@ -114,6 +110,10 @@ th,td{
     text-align: center;
     background: #20334e;
     color: #ffffff;
+}
+td:hover{
+    background: #c6ccd4;
+    color: black;
 }
 .pngs_class{
     display:inline-block;
